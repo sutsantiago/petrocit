@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Language" content="es"/> 
+	<meta name="Keywords" content="pueba,html" /> 
+	<meta name="Description" content="prueba html. Meta tags,naranjas" /> 
+
+	<!-- Estilos -->
+ 	<link href="css/style.css" type="text/css" rel="stylesheet">
+ 	<link href="css/reveal.css" type="text/css" rel="stylesheet">
+ 	<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+	<!-- Script -->
+ 	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+ 	<script type="text/javascript" src="js/jquery.reveal.js"></script>
+ 	
+</head>
+<body>
+	<div id="contenedor">
+
+		<div id="contFondo">
+			<img src="image/main_bg.png" alt="img fondo" border="0" >
+		</div>
+		
+		<div id="header">
+			<div id="headLogo">
+				<a href="index.html"><img src="image/logo.png"></a>
+			</div>
+			<div id="headMenu">
+					<div id="menucase">
+					  <div id="stylefour">
+					    <ul>
+					      <li><a href="index.html" class="current">Inicio</a></li>
+					      <li><a href="empresa.html">La empresa</a></li>
+					      <li><a href="index.html">Nuestros productos</a></li>
+					      <li><a href="contacto.html">Contacto</a></li>
+					  	</ul>
+					  </div>
+					</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		<div id="footer">
+			<div class="hr"><hr/></div>
+			<div id="footContImg">
+				<img src="image/footer_img1.png">
+				<img src="image/footer_img2.png">
+			</div>
+			<div id="footContText">
+				<p>© 2013 PETROQUÍMICOS Y CÍTRICOS S.A. DE C.V. TODOS LOS DERECHOS RESERVADOS.- DISEÑO Y DESARROLLO WEB:
+				<a href="#">wmg.mx</a></p>
+				<a href="#"></p>AVISO DE PRIVASIDAD</p></a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+	<!-- Google CDN jQuery with fallback to local -->
+	<!--Nota: Para buenas practicas los script deben de ir al final del body y que el sitio web carge rapido -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/minified/jquery-1.9.1.min.js"%3E%3C/script%3E'))</script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<script>
+		(function($){
+			$(window).load(function(){
+				$("#content_6").mCustomScrollbar({
+					scrollButtons:{
+						enable:true
+					},
+					theme:"dark-thick"
+				});
+			});
+		})(jQuery);
+	</script>
+</body>
+</html>
